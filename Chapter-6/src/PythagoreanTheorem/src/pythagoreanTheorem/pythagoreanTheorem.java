@@ -16,11 +16,10 @@ public class pythagoreanTheorem
 	public static void main(String[] args) 
 	{
 		String solveSide, solveAgain;
-		JOptionPane.showInputDialog(null, "Would you like to solve for the area, or the side length of a right triangle?");
 		
 		do
 		{
-			solveSide = JOptionPane.showInputDialog(null, "Which side do you need to solveSide for?\nA, B, or C");
+			solveSide = JOptionPane.showInputDialog(null, "Which side do you need to solve for?\nA, B, or C");
 		
 			if("A".equals(solveSide) || "a".equals(solveSide))
 			{
@@ -43,8 +42,8 @@ public class pythagoreanTheorem
 				getSideC(a, b);
 				JOptionPane.showMessageDialog(null, "The side length of " + solveSide + " is " + c);
 			}
-			solveAgain = JOptionPane.showInputDialog(null, "Would you like to solveSide another right triangle?\nsolveAgain or No?");
-		} while("solveAgain".equals(solveAgain) || "solveAgain".equals(solveAgain) || "y".equals(solveAgain) || "Y".equals(solveAgain));
+			solveAgain = JOptionPane.showInputDialog(null, "Would you like to solve another right triangle?\nYes or No?");
+		} while("Yes".equals(solveAgain) || "yes".equals(solveAgain) || "Y".equals(solveAgain) || "y".equals(solveAgain));
 			
 	}
 	public static double getSideA(double b, double c)
